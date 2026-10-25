@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Maleta didáctica digital: Sogamoso produce</title>
+<script>document.documentElement.setAttribute("data-bs-theme",matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<style>
+:root{--bg:#fbf8f1;--card:#fff;--tx:#23302a;--mut:#5d6b63;--ac:#2f7d4f;--ac2:#e8f2ea;--bd:#d9e0d6;--wr:#fff4d6;--ok:#2f7d4f;--ko:#b3402f;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17201b;--card:#1f2b24;--tx:#e8efe9;--mut:#a5b3aa;--ac:#6cc58d;--ac2:#25382c;--bd:#33463a;--wr:#3a3420;--ok:#6cc58d;--ko:#f08a78}}
+:root[data-theme="dark"]{--bg:#17201b;--card:#1f2b24;--tx:#e8efe9;--mut:#a5b3aa;--ac:#6cc58d;--ac2:#25382c;--bd:#33463a;--wr:#3a3420;--ok:#6cc58d;--ko:#f08a78}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 Georgia,"Times New Roman",serif}
+header{padding:28px 20px 16px;max-width:900px;margin:auto}
+h1{font-size:1.8rem;margin:.2em 0}h2{font-size:1.3rem;color:var(--ac);margin-top:1.2em}h3{font-size:1.05rem;margin:1em 0 .3em}
+.tag{font:600 .8rem system-ui,sans-serif;color:var(--ac);text-transform:uppercase;letter-spacing:.06em}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5;border-bottom:1px solid var(--bd);display:flex;gap:6px;overflow-x:auto;padding:8px 20px;max-width:900px;margin:auto}
+nav button{font:600 .85rem system-ui,sans-serif;border:1px solid var(--bd);background:var(--card);color:var(--tx);padding:8px 12px;border-radius:20px;cursor:pointer;white-space:nowrap}
+nav button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+main{max-width:900px;margin:auto;padding:0 20px 60px}
+section{display:none}section.on{display:block}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px 18px;margin:12px 0}
+.dba{background:var(--ac2);border-left:4px solid var(--ac)}
+.warn{background:var(--wr)}
+.wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:520px;font-size:.92rem}
+th,td{border:1px solid var(--bd);padding:7px 9px;text-align:left;vertical-align:top}th{background:var(--ac2)}
+.game button{font:600 .85rem system-ui,sans-serif;margin:3px;padding:7px 10px;border-radius:8px;border:1px solid var(--bd);background:var(--card);color:var(--tx);cursor:pointer}
+.game .q{padding:8px 0;border-bottom:1px dashed var(--bd)}.fb{font:600 .85rem system-ui,sans-serif;margin-left:6px}
+.ok{color:var(--ok)}.ko{color:var(--ko)}
+.ed{min-height:60px;border:1px dashed var(--ac);border-radius:8px;padding:8px;color:var(--mut)}
+.pr{font:600 .9rem system-ui,sans-serif;background:var(--ac);color:#fff;border:0;border-radius:8px;padding:9px 14px;cursor:pointer}
+body,td,th,li,p,h1,h3,.card,.nav-link{color:var(--tx)}th{color:var(--tx)!important}.card.dba,.card.warn{color:var(--tx)}
+.table{--bs-table-color:var(--tx);--bs-table-bg:transparent;--bs-table-striped-color:var(--tx);--bs-table-border-color:var(--bd);color:var(--tx)}.alert-warning{--bs-alert-color:var(--tx);--bs-alert-bg:var(--wr);--bs-alert-border-color:var(--bd)}.nav-pills .nav-link,.btn-outline-success{color:var(--ac)}.card{--bs-card-color:var(--tx);--bs-card-bg:var(--card)}
+textarea.ed,input.ed{font:inherit;background:var(--card);color:var(--tx);width:100%;box-sizing:border-box}input.ed{width:auto;min-width:240px;min-height:0}textarea.ed{min-height:80px;resize:vertical}
+.hero{width:100%;height:auto;border-radius:12px;display:block}.hot{cursor:pointer;transition:opacity .15s}.hot:hover{opacity:.75}
+.fc{display:inline-block;vertical-align:top;width:150px;min-height:105px;margin:5px;padding:10px;text-align:center;border:2px solid var(--ac);border-radius:12px;background:var(--card);cursor:pointer;font:600 .9rem system-ui,sans-serif}.fc b{display:block;font-size:1.9rem}.fc.back{background:var(--ac2);font-weight:400;font-size:.82rem}
+.build select{font:.85rem system-ui,sans-serif;padding:6px;border-radius:8px;border:1px solid var(--bd);background:var(--card);color:var(--tx);max-width:100%}.build .r{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:8px 0;border-bottom:1px dashed var(--bd)}.build .r span.t{flex:1 1 170px;font-weight:600}
+.gal{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}.gal img{width:140px;height:105px;object-fit:cover;border-radius:8px;border:1px solid var(--bd)}
+@media print{nav,.pr{display:none}section{display:block!important}}
+</style>
+</head>
+<body>
+<header class="container">
+<div class="tag">Micropráctica III · Geografía · Grado 3° · Básica Primaria · Sogamoso, Boyacá</div>
+<h1>Maleta didáctica digital: «Sogamoso produce»</h1>
+<p>Autoras: Claudia Sanchez, Erika Amaya y Leidy Penagos  · Institución: <input class="ed" type="text" placeholder="[Institución, Sogamoso, Boyacá]"></p>
+<svg class="hero" viewBox="0 0 600 200" role="img" aria-label="Paisaje colombiano con montañas, campo, río y casas"><rect width="600" height="200" fill="#cfe8f5"/><circle cx="520" cy="40" r="24" fill="#f7d046"/><polygon points="0,140 110,50 230,140" fill="#8aa39a"/><polygon points="150,140 300,40 450,140" fill="#6f8f84"/><polygon points="270,62 300,40 330,62 310,58 300,66 288,58" fill="#fff"/><rect y="135" width="600" height="65" fill="#7cb06a"/><path d="M400 140 Q440 170 380 200 L450 200 Q490 170 440 140Z" fill="#4a9fd1"/><rect x="60" y="150" width="46" height="32" fill="#d9a066"/><polygon points="54,150 83,128 112,150" fill="#b0452f"/><rect x="76" y="164" width="14" height="18" fill="#6b4a2f"/><rect x="150" y="160" width="200" height="4" fill="#5f9a52"/><rect x="150" y="172" width="200" height="4" fill="#5f9a52"/><rect x="150" y="184" width="200" height="4" fill="#5f9a52"/></svg>
+<nav id="nav" class="nav nav-pills container"></nav>
+<main class="container">
+
+<section id="plan">
+<h2>1. Plan de clase</h2>
+<div class="card dba"><b>DBA 2 (Ciencias Sociales, grado 3°):</b> Relaciona las características biogeográficas de su departamento, municipio, resguardo o lugar donde vive, con las actividades económicas que en ellos se realizan.</div>
+<div class="card"><h3>Tema</h3>Recursos naturales y actividades económicas de Sogamoso (Boyacá): del suelo y el clima frío, el agua de los ríos y del Lago de Tota, al alimento que llega a mi mesa.</div>
+<div class="card"><h3>Objetivo</h3>Relacionar los recursos naturales de la región donde vivo (suelo, clima, flora, fauna y agua) con las actividades económicas que allí se realizan, explicando quiénes las organizan y por qué algunos productos no se dan en otros climas.</div>
+<div class="card"><h3>Contenidos</h3>
+<b>Conceptuales:</b> recursos naturales (suelo, clima, flora, fauna, agua); actividades económicas (agricultura, ganadería, pesca, industria, minería, servicios); formas de organización (empresas, asociaciones, corporaciones autónomas regionales).<br>
+<b>Procedimentales:</b> observar el paisaje, clasificar, ubicar en el mapa, representar y explicar.<br>
+<b>Actitudinales:</b> valoración del trabajo de quienes producen los alimentos y cuidado de los recursos.</div>
+<div class="card"><h3>Metodología</h3>Aprendizaje basado en la experiencia y en el juego, con trabajo cooperativo en grupos de 4. Se parte de lo cercano (la región y lo que se consume en casa) y se avanza hacia la explicación geográfica. Cada sesión sigue el ciclo: pregunta orientadora, exploración, construcción con material manipulativo, socialización y cierre reflexivo.</div>
+<div class="card"><h3>Evidencias de aprendizaje trabajadas (DBA 2)</h3>
+<ul><li>Identifica la oferta de recursos naturales de su región: suelo, clima, flora, fauna y agua.</li>
+<li>Reconoce las actividades que se realizan: agricultura, ganadería, pesca, industria, minería o servicios.</li>
+<li>Describe las formas de organización social y económica para explotar los recursos naturales.</li>
+<li>Expresa por qué en espacios con ciertos climas no hay ciertos productos y destaca el trabajo de quienes producen los alimentos.</li></ul></div>
+<div class="card warn alert alert-warning"><b>Contexto:</b> los ejemplos corresponden a Sogamoso y su provincia (valle de Sogamoso y Lago de Tota). Confirma los datos locales con la docente titular antes de la clase. Como Boyacá no tiene costa, el DBA 1 puede quedar como extensión: ¿qué ventajas y desventajas tiene vivir lejos del mar?</div>
+</section>
+
+<section id="seq">
+<h2>2. Secuencia de actividades (90 minutos)</h2>
+<div class="wrap"><table class="table table-bordered table-sm align-middle">
+<tr><th>Momento</th><th>Tiempo</th><th>Actividad</th><th>Recurso</th></tr>
+<tr><td>Inicio</td><td>15 min</td><td>Pregunta orientadora: «¿De dónde viene lo que desayunamos?». Cada niño dibuja un alimento y lo pega en el tablero. Se registran saberes previos.</td><td>Tarjetas, tablero</td></tr>
+<tr><td>Exploración</td><td>20 min</td><td>Recorrido visual por fotos y mapa de la región. Se identifican suelo, clima, flora, fauna y agua.</td><td>Presentación, mapa</td></tr>
+<tr><td>Construcción</td><td>30 min</td><td>Juego con el recurso clave <b>«Ruta del alimento»</b>: en grupos arman la cadena recurso → actividad → quién organiza → mi mesa.</td><td>Fichas manipulativas</td></tr>
+<tr><td>Práctica digital</td><td>10 min</td><td>Mini-juego «¿Qué actividad es?» (pestaña Recursos).</td><td>Tableta o proyector</td></tr>
+<tr><td>Cierre</td><td>15 min</td><td>Socialización: ¿Por qué el café no se da en todas partes? ¿Quién trabaja para que tengamos alimentos? Autoevaluación con caritas.</td><td>Rúbrica, caritas</td></tr>
+</table></div>
+<p class="card warn alert alert-warning">Si dispones de menos tiempo, usa el inicio, la construcción y el cierre (60 min).</p>
+</section>
+
+<section id="res">
+<h2>3. Recursos digitales y material de apoyo</h2>
+<div class="card"><h3>Enlaces sugeridos (verifica que funcionen antes de la clase)</h3>
+<ul><li>Mapas del IGAC, «Colombia en Mapas»: mapas de relieve, clima y uso del suelo.</li>
+<li>Google Earth: observar Sogamoso, el valle y el Lago de Tota desde arriba.</li>
+<li>Videos cortos sobre el recorrido de un alimento (cultivo → mercado → mesa).</li></ul>
+<textarea class="ed" rows="3" placeholder="[Pega aquí tus enlaces definitivos]"></textarea></div>
+<div class="card"><h3>🔎 Explora el paisaje (toca cada lugar)</h3>
+<svg class="hero" viewBox="0 0 600 260" role="img" aria-label="Paisaje interactivo"><rect width="600" height="260" fill="#cfe8f5"/><circle cx="545" cy="34" r="22" fill="#f7d046"/>
+<polygon class="hot" data-k="agua" points="0,170 120,55 250,170" fill="#8aa39a"><title>Montaña</title></polygon><polygon class="hot" data-k="clima" points="170,170 310,70 450,170" fill="#6f8f84"><title>Clima</title></polygon>
+<rect class="hot" data-k="agricultura" y="170" width="600" height="90" fill="#7cb06a"><title>Cultivos</title></rect><rect x="20" y="185" width="170" height="5" fill="#4f8a43"/><rect x="20" y="199" width="170" height="5" fill="#4f8a43"/><rect x="20" y="213" width="170" height="5" fill="#4f8a43"/>
+<path class="hot" data-k="pesca" d="M380 170 Q430 215 360 260 L440 260 Q500 215 440 170Z" fill="#4a9fd1"><title>Río</title></path>
+<g class="hot" data-k="ganaderia"><rect x="215" y="205" width="46" height="22" rx="6" fill="#fff" stroke="#333"/><circle cx="264" cy="207" r="9" fill="#fff" stroke="#333"/><rect x="222" y="225" width="4" height="12" fill="#333"/><rect x="248" y="225" width="4" height="12" fill="#333"/><circle cx="228" cy="213" r="4" fill="#333"/><title>Vaca</title></g>
+<g class="hot" data-k="mineria"><polygon points="20,160 60,128 100,160" fill="#7a6a5a"/><rect x="45" y="142" width="30" height="18" fill="#2f2620"/><title>Mina</title></g>
+<g class="hot" data-k="industria"><rect x="490" y="150" width="80" height="55" fill="#b96b4a"/><rect x="500" y="120" width="14" height="32" fill="#8e4f36"/><rect x="526" y="165" width="16" height="16" fill="#ffe9a8"/><title>Fábrica</title></g>
+<g class="hot" data-k="servicios"><rect x="290" y="230" width="60" height="18" fill="#e0a030"/><rect x="350" y="236" width="22" height="12" fill="#c78a20"/><circle cx="305" cy="250" r="6" fill="#222"/><circle cx="360" cy="250" r="6" fill="#222"/><title>Camión</title></g></svg>
+<div id="info" class="card warn" style="margin-bottom:0">Toca una montaña, el cultivo, el río, la vaca, la mina, la fábrica o el camión.</div></div>
+<div class="card"><h3>🃏 Tarjetas de los recursos (toca para voltear)</h3><div id="fcs"></div></div>
+<div class="card game"><h3>Mini-juego: ¿Qué actividad económica es?</h3><div id="game"></div><p id="score" class="fb"></p></div>
+<div class="card"><h3>Material imprimible</h3>
+<ul><li>Guía de trabajo «Mi región produce» (dibujo del paisaje y cuadro de recursos).</li>
+<li>Fichas de la «Ruta del alimento» (ver pestaña Recurso clave).</li>
+<li>Caritas de autoevaluación (😀 😐 🙁).</li></ul></div>
+</section>
+
+<section id="key">
+<h2>4. Recurso clave: «Ruta del alimento»</h2>
+<div class="card"><b>¿Qué es?</b> Un juego de fichas con tablero en cuatro casillas que el niño recorre y completa: <b>1. Recurso natural → 2. Actividad económica → 3. Quién la organiza → 4. Mi mesa.</b> Se imprime en cartulina o se construye con material reciclado.<br><br>
+<b>Por qué funciona:</b> hace visible la relación entre el territorio y la economía, que es el núcleo del DBA, y permite manipular, comparar y explicar.</div>
+<div class="wrap"><table class="table table-bordered table-sm align-middle">
+<tr><th>1. Recurso</th><th>2. Actividad</th><th>3. Organiza</th><th>4. Mi mesa</th></tr>
+<tr><td>Suelo fértil y clima frío</td><td>Agricultura</td><td>Asociación de agricultores</td><td>Papa y cebolla</td></tr>
+<tr><td>Pastos y clima frío</td><td>Ganadería</td><td>Cooperativa lechera</td><td>Leche y cuajada</td></tr>
+<tr><td>Agua del Lago de Tota</td><td>Pesca</td><td>Asociación de piscicultores</td><td>Trucha</td></tr>
+<tr><td>Subsuelo</td><td>Minería</td><td>Empresas y asociaciones mineras</td><td>Carbón</td></tr>
+<tr><td>Cosecha de trigo</td><td>Industria</td><td>Empresa panificadora</td><td>Pan</td></tr>
+</table></div>
+<p class="card warn alert alert-warning"><b>Para el cierre:</b> el agua, el suelo y el bosque se cuidan con ayuda de las Corporaciones Autónomas Regionales (en Boyacá, Corpoboyacá). Pregunta al grupo: ¿por qué hay que protegerlos?</p>
+<div class="card build"><h3>🧩 Arma la Ruta del alimento</h3><p>Elige la actividad y el alimento que corresponde a cada recurso.</p><div id="bld"></div><button class="pr btn btn-success" id="bchk" style="margin-top:10px">Comprobar mi ruta</button> <span id="bsc" class="fb"></span></div>
+<button class="pr btn btn-success" onclick="try{window.print()}catch(e){}document.getElementById('pn').style.display='block'">Imprimir fichas</button><p id="pn" style="display:none;margin-top:8px" class="card warn">Si no se abrió la ventana de impresión, tu navegador la bloquea dentro de esta vista. Abre el archivo <b>maleta_geografia_bootstrap.html</b> en tu computador y presiona Ctrl+P (o ⌘+P) para imprimir o guardar como PDF.</p>
+</section>
+
+<section id="eva">
+<h2>5. Estrategias de evaluación</h2>
+<div class="card"><b>Diagnóstica:</b> dibujo y pregunta inicial. <b>Formativa:</b> lista de cotejo durante el juego. <b>Final:</b> rúbrica y autoevaluación.</div>
+<div class="wrap"><table class="table table-bordered table-sm align-middle">
+<tr><th>Criterio (evidencia DBA)</th><th>Alto</th><th>Básico</th><th>Por mejorar</th></tr>
+<tr><td>Identifica recursos naturales de su región</td><td>Nombra y ubica los cinco recursos</td><td>Nombra dos o tres</td><td>Necesita apoyo para nombrarlos</td></tr>
+<tr><td>Reconoce actividades económicas</td><td>Relaciona recurso y actividad correctamente</td><td>Lo hace con ayuda</td><td>Confunde las actividades</td></tr>
+<tr><td>Describe quién organiza la producción</td><td>Explica con ejemplos</td><td>Menciona un ejemplo</td><td>No lo reconoce</td></tr>
+<tr><td>Explica por qué algunos productos no se dan en ciertos climas y valora a quien produce</td><td>Argumenta con un ejemplo</td><td>Lo expresa con frases simples</td><td>No lo explica aún</td></tr>
+</table></div>
+</section>
+
+<section id="evi">
+<h2>6. Evidencias de implementación</h2>
+<div class="card warn alert alert-warning">Incluye fotografías de rostros solo si cuentas con autorización escrita de la institución y de los acudientes; de lo contrario, muestra materiales, trabajos y manos.</div>
+<div class="card"><span id="est" class="fb">Cargando…</span>
+<div id="lg" class="mt-2"><b>Ingreso de la autora</b><div class="d-flex flex-wrap gap-2 mt-1"><input id="em" class="ed" type="email" placeholder="Correo" autocomplete="username"><input id="pw" class="ed" type="password" placeholder="Contraseña" autocomplete="current-password"><button class="pr btn btn-success btn-sm" id="bin">Ingresar</button></div></div>
+<div id="au" style="display:none"><b>Sesión de autora activa.</b> <button class="pr btn btn-secondary btn-sm" id="bout">Salir</button></div></div>
+<div class="card"><h3>Datos de la visita</h3><textarea class="ed" data-k="datos" rows="3" readonly placeholder="Pendiente: fecha, institución, grado, docente titular, número de estudiantes"></textarea></div>
+<div class="card"><h3>Notas de campo</h3><textarea class="ed" data-k="campo" rows="5" readonly placeholder="Pendiente: qué pasó, reacciones de los niños, dificultades y ajustes"></textarea></div>
+<div class="card"><h3>Valoración de la docente titular</h3><textarea class="ed" data-k="valoracion" rows="5" readonly placeholder="Pendiente: pertinencia con el DBA, claridad, recurso didáctico, manejo del grupo, sugerencias, nombre y firma"></textarea>
+<button class="pr btn btn-success btn-sm mt-2 au-only" id="bsv" style="display:none">Guardar textos</button></div>
+<div class="card"><h3>📷 Fotografías</h3><div id="up" class="au-only" style="display:none"><input type="file" id="ph" accept="image/*" multiple><input id="cap" class="ed" type="text" placeholder="Descripción de la foto (opcional)"><button class="pr btn btn-success btn-sm mt-2" id="bup">Subir fotos</button></div>
+<div class="gal" id="gal"><span class="text-muted">Pendiente: las fotos de la visita aparecerán aquí.</span></div></div>
+</section>
+
+<section id="ref">
+<h2>7. Reflexión y referencias</h2>
+<div class="card"><h3>Reflexión pedagógica</h3><textarea class="ed" rows="3" placeholder="[Qué funcionó, qué cambiarías, cómo mejorarías el recurso]"></textarea></div>
+<div class="card"><h3>Referencias (APA)</h3>Ministerio de Educación Nacional. (2016). <i>Derechos Básicos de Aprendizaje: Ciencias Sociales.</i> MEN.<br>Instituto Geográfico Agustín Codazzi. (s. f.). <i>Colombia en Mapas.</i><br><textarea class="ed" rows="3" placeholder="[Agrega otras fuentes]"></textarea></div>
+</section>
+
+</main>
+<script>
+var names=[["plan","Plan"],["seq","Secuencia"],["res","Recursos"],["key","Recurso clave"],["eva","Evaluación"],["evi","Evidencias"],["ref","Reflexión"]];
+var nav=document.getElementById("nav");
+function show(id){names.forEach(function(n){document.getElementById(n[0]).classList.toggle("on",n[0]===id)});
+Array.prototype.forEach.call(nav.children,function(b){b.classList.toggle("on",b.dataset.id===id)});window.scrollTo(0,0)}
+names.forEach(function(n){var b=document.createElement("button");b.textContent=n[1];b.dataset.id=n[0];b.onclick=function(){show(n[0])};nav.appendChild(b)});
+show("plan");
+var acts=["Agricultura","Ganadería","Pesca","Minería","Industria","Servicios"];
+var items=[["Cultivar papa en la finca","Agricultura"],["Criar vacas para sacar leche","Ganadería"],["Criar truchas en el Lago de Tota","Pesca"],["Extraer carbón del subsuelo","Minería"],["Hacer pan en una fábrica","Industria"],["Vender productos en la plaza de mercado","Servicios"]];
+var done=0,good=0,g=document.getElementById("game");
+items.forEach(function(it,i){var d=document.createElement("div");d.className="q";d.textContent=it[0]+": ";
+var fb=document.createElement("span");fb.className="fb";
+acts.forEach(function(a){var b=document.createElement("button");b.className="btn btn-outline-success btn-sm m-1";b.textContent=a;b.onclick=function(){
+if(d.dataset.d)return;d.dataset.d=1;done++;
+if(a===it[1]){good++;fb.textContent="¡Correcto!";fb.className="fb ok"}else{fb.textContent="Era "+it[1];fb.className="fb ko"}
+if(done===items.length)document.getElementById("score").textContent="Aciertos: "+good+" de "+items.length};d.appendChild(b)});
+d.appendChild(fb);g.appendChild(d)});
+var info={agua:"💧 Agua: nace en los páramos y montañas de Boyacá, baja por los ríos y se almacena en el Lago de Tota, el lago natural más grande de Colombia.",clima:"☁️ Clima: Sogamoso es frío, a unos 2.500 metros de altura. Por eso se dan la papa, la cebolla y los pastos, y no el café ni el plátano.",agricultura:"🌱 Agricultura: en la provincia se cultivan papa, cebolla larga (famosa la del Lago de Tota) y hortalizas. Familias, asociaciones y empresas la organizan.",pesca:"🐟 Pesca: en el Lago de Tota se cría trucha. Las asociaciones de piscicultores organizan el trabajo.",ganaderia:"🐄 Ganadería: los pastos del altiplano boyacense alimentan al ganado lechero, que da leche, cuajada y queso. Las cooperativas la organizan.",mineria:"⛏️ Minería: se extraen carbón y caliza del subsuelo. Empresas y asociaciones mineras la organizan, y Corpoboyacá, la corporación autónoma regional, vigila el cuidado del ambiente.",industria:"🏭 Industria: transforma materias primas; en la zona hay siderúrgicas y cementeras (Belencito, Nobsa), panaderías y artesanías como las ruanas de Nobsa.",servicios:"🚚 Servicios: transporte, comercio y turismo. Sogamoso es un centro comercial de la provincia y allí está el Museo Arqueológico, conocido como Templo del Sol."};
+Array.prototype.forEach.call(document.querySelectorAll(".hot"),function(h){h.onclick=function(){document.getElementById("info").textContent=info[h.dataset.k]}});
+var fcd=[["🌱","Suelo","Tierra fértil del valle donde crecen papa, cebolla y pastos."],["☁️","Clima","Clima frío: se dan papa y cebolla; el café no crece aquí."],["🌿","Flora","Plantas de páramo, como el frailejón: protegen el agua."],["🐄","Fauna","Vacas lecheras, ovejas y truchas del Lago de Tota."],["💧","Agua","Lago de Tota, ríos y páramos: dan agua para cultivar y vivir."]];
+var fcs=document.getElementById("fcs");
+fcd.forEach(function(c){var d=document.createElement("div");d.className="fc";var f=true;function r(){d.className=f?"fc":"fc back";d.innerHTML=f?"<b>"+c[0]+"</b>"+c[1]:c[2]}r();d.onclick=function(){f=!f;r()};fcs.appendChild(d)});
+var rows=[["Suelo fértil y clima frío","Agricultura","Papa y cebolla"],["Pastos y clima frío","Ganadería","Leche y cuajada"],["Agua del Lago de Tota","Pesca","Trucha"],["Subsuelo","Minería","Carbón"],["Cosecha de trigo","Industria","Pan"]];
+var meals=["Papa y cebolla","Leche y cuajada","Trucha","Carbón","Pan"];
+function sel(list){var s=document.createElement("select");var o=document.createElement("option");o.textContent="Elige…";o.value="";s.appendChild(o);list.forEach(function(x){var p=document.createElement("option");p.textContent=x;s.appendChild(p)});return s}
+var bl=document.getElementById("bld"),sels=[];
+rows.forEach(function(r){var d=document.createElement("div");d.className="r";var t=document.createElement("span");t.className="t";t.textContent=r[0]+" →";var a=sel(acts),m=sel(meals);d.appendChild(t);d.appendChild(a);d.appendChild(m);bl.appendChild(d);sels.push([a,m,d,r])});
+document.getElementById("bchk").onclick=function(){var n=0;sels.forEach(function(s){var ok=s[0].value===s[3][1]&&s[1].value===s[3][2];if(ok)n++;s[2].style.background=ok?"var(--ac2)":"var(--wr)"});document.getElementById("bsc").textContent=n+" de "+rows.length+(n===rows.length?" ¡Ruta completa! 🎉":" ¡Sigue intentando!")};
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script>
+/* 1) Pega aquí los dos datos de tu proyecto Supabase (Project Settings → API) */
+var SUPABASE_URL="https://kpzsshnomcreseygerch.supabase.co";
+var SUPABASE_KEY="sb_publishable_rk7t0lOvVWnvBGoZonuIrw_p-AQn2NW";
+var sb=null,autora=false;
+function $(i){return document.getElementById(i)}
+function est(t){$("est").textContent=t}
+try{if(SUPABASE_URL.indexOf("http")===0)sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY)}catch(e){}
+function modo(a){autora=a;$("lg").style.display=a?"none":"block";$("au").style.display=a?"block":"none";
+Array.prototype.forEach.call(document.querySelectorAll(".au-only"),function(e){e.style.display=a?"block":"none"});
+Array.prototype.forEach.call(document.querySelectorAll("textarea[data-k]"),function(t){t.readOnly=!a});galeria()}
+var fotos=[];
+function galeria(){var g=$("gal");g.textContent="";if(!fotos.length){g.innerHTML='<span class="text-muted">Pendiente: las fotos de la visita aparecerán aquí.</span>';return}
+fotos.forEach(function(f){var w=document.createElement("figure");w.style.margin="0";w.style.width="150px";
+var i=document.createElement("img");i.src=sb.storage.from("evidencias").getPublicUrl(f.ruta).data.publicUrl;i.alt=f.descripcion||"Evidencia de la clase";w.appendChild(i);
+var c=document.createElement("figcaption");c.style.fontSize=".8rem";c.textContent=f.descripcion||"";w.appendChild(c);
+if(autora){var b=document.createElement("button");b.className="btn btn-outline-danger btn-sm";b.textContent="Borrar";b.onclick=function(){borrar(f)};w.appendChild(b)}
+g.appendChild(w)})}
+async function cargar(){if(!sb){est("Modo demostración: falta conectar Supabase.");return}
+var n=await sb.from("notas").select("*");if(n.error){est("No se pudieron cargar los textos.");return}
+n.data.forEach(function(r){var t=document.querySelector('textarea[data-k="'+r.clave+'"]');if(t)t.value=r.texto});
+var f=await sb.from("fotos").select("*").order("created_at");fotos=f.data||[];galeria();est("Evidencias cargadas.")}
+async function borrar(f){if(!confirm("¿Borrar esta foto?"))return;await sb.storage.from("evidencias").remove([f.ruta]);await sb.from("fotos").delete().eq("id",f.id);cargar()}
+if(sb){sb.auth.onAuthStateChange(function(e,ses){modo(!!ses)});
+$("bin").onclick=async function(){var r=await sb.auth.signInWithPassword({email:$("em").value,password:$("pw").value});est(r.error?"Correo o contraseña incorrectos.":"Sesión iniciada.")};
+$("bout").onclick=function(){sb.auth.signOut()};
+$("bsv").onclick=async function(){var rows=[];Array.prototype.forEach.call(document.querySelectorAll("textarea[data-k]"),function(t){rows.push({clave:t.dataset.k,texto:t.value,updated_at:new Date().toISOString()})});
+var r=await sb.from("notas").upsert(rows);est(r.error?"Error al guardar.":"Textos guardados ✔")};
+$("bup").onclick=async function(){var fs=$("ph").files;if(!fs.length){est("Elige una o más fotos.");return}est("Subiendo…");
+for(var k=0;k<fs.length;k++){var f=fs[k],ruta=Date.now()+"-"+k+"-"+f.name.replace(/[^a-zA-Z0-9._-]/g,"_");
+var u=await sb.storage.from("evidencias").upload(ruta,f);if(u.error){est("Error al subir una foto.");return}
+await sb.from("fotos").insert({ruta:ruta,descripcion:$("cap").value})}
+$("ph").value="";$("cap").value="";est("Fotos subidas ✔");cargar()};
+cargar()}else{cargar();modo(false)}
+</script>
+</body>
+</html>
